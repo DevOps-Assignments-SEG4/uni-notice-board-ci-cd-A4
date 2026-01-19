@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Notices | University Notice Board</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ================= Header ================= -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Uni<span>Notice</span></h1>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="notice.html" >Academic Notices</a></li>
+                    <li><a href="#exam">Exam Schedules</a></li>
+                    <li><a href="#admission">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <!-- ================= Page Banner ================= -->
+    <section class="hero" style="padding: 5rem 0;">
+        <div class="container">
+            <h1>Academic Notices</h1>
+            <p class="lead">Latest academic announcements, circulars, workshops and university updates</p>
+        </div>
+    </section>
+
+    <!-- ================= Notice Section ================= -->
+    <section class="notice-section">
+        <div class="container">
+            <h2 class="section-title">Latest Notices</h2>
+
+            <div class="notice-list">
+
+                <div class="notice-card">
+                    <span class="notice-tag academic">Academic</span>
+                    <h3>Mid-Term Examination Schedule</h3>
+                    <p>
+                        Mid-term examinations for Spring Semester 2026 will start from 10th March.
+                        Students are advised to check the official exam portal for details.
+                    </p>
+                    <div class="notice-footer">
+                        <span class="notice-date">📅 05 March 2026</span>
+                        <a href="#" class="notice-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="notice-card">
+                    <span class="notice-tag event">Event</span>
+                    <h3>AI & Data Science Workshop</h3>
+                    <p>
+                        The Department of Computer Science is organizing a 3-day AI workshop.
+                        Registration is mandatory due to limited seats.
+                    </p>
+                    <div class="notice-footer">
+                        <span class="notice-date">📅 28 February 2026</span>
+                        <a href="#" class="notice-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="notice-card">
+                    <span class="notice-tag urgent">Urgent</span>
+                    <h3>Semester Fee Submission Deadline</h3>
+                    <p>
+                        Students must submit their semester fees before 1st March 2026
+                        to avoid late payment penalties.
+                    </p>
+                    <div class="notice-footer">
+                        <span class="notice-date">📅 25 February 2026</span>
+                        <a href="#" class="notice-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="notice-card">
+                    <span class="notice-tag academic">Academic</span>
+                    <h3>Final Year Project Proposal Submission</h3>
+                    <p>
+                        Final year students are informed to submit their FYP proposals
+                        before 15th March 2026 to the project committee.
+                    </p>
+                    <div class="notice-footer">
+                        <span class="notice-date">📅 20 February 2026</span>
+                        <a href="#" class="notice-link">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 University Notice Board. All Rights Reserved.</p>
+            <p>Designed for quick & easy access to university updates</p>
+        </div>
+    </footer>
+
+    <!-- ================= Script ================= -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

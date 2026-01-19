@@ -239,3 +239,116 @@ body {
 
 
 }
+/* ==================================================
+   NOTICE PAGE STYLES
+   ================================================== */
+
+.notice-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #0d2d62;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* Notice Grid */
+.notice-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Notice Card */
+.notice-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.notice-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.notice-card h3 {
+    margin: 1.2rem 0 0.8rem;
+    font-size: 1.35rem;
+    color: #0d2d62;
+}
+
+.notice-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Notice Footer */
+.notice-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+}
+
+.notice-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.notice-link {
+    color: #4da6ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.notice-link:hover {
+    text-decoration: underline;
+}
+
+/* Tags */
+.notice-tag {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Tag Colors */
+.notice-tag.academic {
+    background-color: #4da6ff;
+}
+
+.notice-tag.event {
+    background-color: #28a745;
+}
+
+.notice-tag.urgent {
+    background-color: #dc3545;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .notice-section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .notice-card {
+        padding: 1.6rem;
+    }
+}
