@@ -1,0 +1,14 @@
+name: cd-dev-wf
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy-dev-job:
+    runs-on: ubuntu-latest
+    environment: "development-cd"
+    steps:
+      - name: Welcome to Dev-Cd
+        run: echo "Your app is goint to be deployeed at render.com"
+      - name: Deploye Appp
+        run: curl -X POST ${{secrets.DEVELOP_ENV_HOOK}}
