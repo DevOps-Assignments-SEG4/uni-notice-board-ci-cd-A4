@@ -45,8 +45,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build Image
-        run: docker image build -t ${{ secrets.DOCKERHUB_USERNAME }}/app:latest .
+        run: docker image build -t ${{ secrets.DOCKERHUB_USERNAME }}/university-board:latest .
       - name: Create Container On the Runner
-        run: docker container run -d -p 2222:80 ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
+        run: docker container run -d -p 2222:80 ${{ secrets.DOCKERHUB_USERNAME }}/university-board:latest
       - name: Push Docker Image on the docker Hub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/University-Board:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/university-board:latest
