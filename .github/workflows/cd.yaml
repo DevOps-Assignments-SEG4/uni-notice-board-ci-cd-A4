@@ -11,4 +11,4 @@ jobs:
       - name: Welcome to Dev-Cd
         run: echo "Your app is goint to be deployeed at render.com"
       - name: Deploye Appp
-        run: curl -X POST ${{secrets.DEVELOP_ENV_HOOK}}
+        run: curl -X POST ${{secrets.RENDER_CALLBACK_URL}}
