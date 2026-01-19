@@ -6,7 +6,7 @@ on:
 jobs:
   deploy-dev-job:
     runs-on: ubuntu-latest
-    environment: "development-cd"
+    environment: "Development-env"
     steps:
       - name: Welcome to Dev-Cd
         run: echo "Your app is goint to be deployeed at render.com"
