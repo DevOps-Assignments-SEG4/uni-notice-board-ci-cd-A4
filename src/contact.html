@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | University Notice Board</title>
+
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>Uni<span>Notice</span></h1>
+        </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="notice.html" >Academic Notices</a></li>
+            <li><a href="#exam">Exam Schedules</a></li>
+            <li><a href="#admission">Admissions</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-toggle">☰</div>
+</div>
+
+
+</header>
+
+<!-- ================= Banner ================= -->
+
+<section class="hero" style="padding: 5rem 0;">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">Reach out for academic queries, system support or suggestions</p>
+    </div>
+</section>
+
+<!-- ================= Contact Section ================= -->
+
+<section class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Send a Message</h2>
+
+
+    <form class="contact-form">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label>Your Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+</div>
+
+
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 University Notice Board. All Rights Reserved.</p>
+        <p>Designed for quick & easy access to university updates</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
