@@ -1,0 +1,20 @@
+{
+  "name": "w11g4",
+  "version": "1.0.0",
+  "description": "University Digital Notice Board",
+  "type": "commonjs",
+  "scripts": {
+    "lint:html": "htmlhint \"src/**/*.html\"",
+    "lint:css": "stylelint \"styles/**/*.css\"",
+    "build": "parcel build src/index.html --dist-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "htmlhint": "^1.8.0",
+    "parcel": "^2.16.3",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

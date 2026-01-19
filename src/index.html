@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>University Notice Board</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Uni<span>Notice</span></h1>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#notices">Academic Notices</a></li>
+                    <li><a href="#exams">Exam Schedules</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to University Notice Board</h1>
+                <p class="lead">Stay updated with the latest academic notices, examination schedules, admission announcements and important university updates.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#notices" class="btn btn-primary">Latest Notices</a>
+                    <a href="#exams" class="btn btn-outline">Exam Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links / Cards -->
+    <section class="quick-links">
+        <div class="container">
+            <h2>Quick Access</h2>
+            <div class="cards-grid">
+                <a href="#notices" class="card">
+                    <div class="card-icon">📢</div>
+                    <h3>Academic Notices</h3>
+                    <p>Latest circulars, workshops, events & important announcements</p>
+                </a>
+
+                <a href="#exams" class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Examination Schedules</h3>
+                    <p>Date sheets, seating plans, results & reappear forms</p>
+                </a>
+
+                <a href="#admissions" class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Admissions 2025-26</h3>
+                    <p>Merit lists, fee structure, important dates & updates</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder Sections (optional) -->
+    <section id="notices" class="section-placeholder">
+        <div class="container">
+            <h2>Academic Notices</h2>
+            <p>This section will contain the latest academic notices and announcements.</p>
+            <p>(Page under construction)</p>
+        </div>
+    </section>
+
+    <section id="exams" class="section-placeholder">
+        <div class="container">
+            <h2>Examination Schedules</h2>
+            <p>Date sheets, seating arrangements and exam-related updates will appear here.</p>
+            <p>(Page under construction)</p>
+        </div>
+    </section>
+
+    <section id="admissions" class="section-placeholder">
+        <div class="container">
+            <h2>Admissions 2025-26</h2>
+            <p>Admission updates, merit lists, fee structure and important dates.</p>
+            <p>(Page under construction)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 University Notice Board. All Rights Reserved.</p>
+            <p>Designed for quick & easy access to university updates</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+
+        // Optional: Smooth scrolling for hash links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    document.querySelector(targetId)?.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
